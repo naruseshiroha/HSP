@@ -12,14 +12,5 @@ public class Vector01 {
         for (int i = 10; i < 15; i++) {
             vector.add(i);
         }
-        NullPointerException;
-        ArrayIndexOutOfBoundsException;
-        ArithmeticException;
-        NumberFormatException;
-        ClassCastException;
-        short s1 = 1;
-        s1 += 1;
-//        s1= s1 + 1;
-        System.out.println(s1);
     }
 }
