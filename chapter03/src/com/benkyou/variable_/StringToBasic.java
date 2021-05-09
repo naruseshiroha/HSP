@@ -1,3 +1,5 @@
+package com.benkyou.variable_;
+
 public class StringToBasic {
     public static void main(String[] args) {
         // 基本数据类型 -> String

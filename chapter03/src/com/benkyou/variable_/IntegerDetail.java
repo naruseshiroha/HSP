@@ -1,3 +1,5 @@
+package com.benkyou.variable_;
+
 public class IntegerDetail {
     public static void main(String[] args) {
         // java 的整型常量(具体值)默认为 int 型,声明 long 型常量须后加 'l' 或 'L'

@@ -1,3 +1,5 @@
+package com.benkyou.variable_;
+
 public class FloatDetail {
     public static void main(String[] args) {
         // java 的浮点常量(具体值)默认为 double 型,声明 float 型,须后加 'f' 或 'F'

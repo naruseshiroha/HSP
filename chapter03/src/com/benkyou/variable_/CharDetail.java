@@ -1,3 +1,5 @@
+package com.benkyou.variable_;
+
 public class CharDetail {
     public static void main(String[] args) {
         // 在 java 中,char 的本质是一个整数,在默认输出时,是 Unicode 码对应的字符
