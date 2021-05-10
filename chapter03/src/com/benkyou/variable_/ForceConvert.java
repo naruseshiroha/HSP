@@ -1,3 +1,5 @@
+package com.benkyou.variable_;
+
 public class ForceConvert {
     public static void main(String[] args) {
         int i = (int) 1.9; // 1

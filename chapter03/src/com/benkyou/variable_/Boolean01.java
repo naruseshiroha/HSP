@@ -1,3 +1,5 @@
+package com.benkyou.variable_;
+
 public class Boolean01 {
     public static void main(String[] args) {
         boolean isPass = true;

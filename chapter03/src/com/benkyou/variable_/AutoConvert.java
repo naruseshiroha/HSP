@@ -1,3 +1,5 @@
+package com.benkyou.variable_;
+
 public class AutoConvert {
     public static void main(String[] args) {
         // char -> int -> long -> float -> double

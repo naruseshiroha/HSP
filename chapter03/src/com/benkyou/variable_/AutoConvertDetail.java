@@ -1,3 +1,5 @@
+package com.benkyou.variable_;
+
 public class AutoConvertDetail {
     public static void main(String[] args) {
         // 1.有多种类型的数据混合运算时,系统首先自动将所有数据类型转换成

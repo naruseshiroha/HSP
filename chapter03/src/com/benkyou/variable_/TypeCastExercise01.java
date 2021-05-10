@@ -1,3 +1,5 @@
+package com.benkyou.variable_;
+
 public class TypeCastExercise01 {
     public static void main(String[] args) {
         short s = 12;

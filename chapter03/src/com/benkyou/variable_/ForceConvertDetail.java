@@ -1,3 +1,5 @@
+package com.benkyou.variable_;
+
 public class ForceConvertDetail {
     public static void main(String[] args) {
         // 强转符号只针对于最近的操作数有效,往往会使用小括号提升优先级

@@ -1,3 +1,5 @@
+package com.benkyou.variable_;
+
 public class VarDetail {
     public static void main(String[] args) {
         // 变量必须先声明,后使用
