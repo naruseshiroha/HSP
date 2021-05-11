@@ -1,4 +1,4 @@
-package com.hspedu.stringbuffer_;
+package com.benkyou.StringBuffer_;
 
 /**
  * @author 韩顺平

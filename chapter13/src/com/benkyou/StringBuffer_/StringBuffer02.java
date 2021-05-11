@@ -1,14 +1,12 @@
 package com.benkyou.StringBuffer_;
 
-public class StringBuffer01 {
+public class StringBuffer02 {
     public static void main(String[] args) {
-        // 1.StringBuffer 的直接父类是 AbstractStringBuilder
-        // 2.StringBuffer 实现了 Serializable,即 StringBuffer 的对象可串行化
-        // 3.在父类中  有属性 byte[] value; 不是 final 修饰
-        //   该 value 数组存放 字符串 内容,因此存放在堆中的
-        // 4.StringBuffer 是一个 final 类,不能被继承
-        // 5.因为 StringBuffer 字符内容是存在 byte[] value,所以在变化(增加/删除)
-        //   不用每次都更换地址(即不是每次创建新对象),所以效率高于 String
+        // 1.创建一个大小为 16 的 byte[] value; 用于存放字符内容
         StringBuffer sb = new StringBuffer();
+        // 2.通过构造器指定 byte[] value 大小
+        StringBuffer sb2 = new StringBuffer(100);
+        // 3.
+        StringBuffer sb3 = new StringBuffer("hello");
     }
 }

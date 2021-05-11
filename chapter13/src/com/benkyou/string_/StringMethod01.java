@@ -1,9 +1,5 @@
-package com.hspedu.string_;
+package com.benkyou.string_;
 
-/**
- * @author 韩顺平
- * @version 1.0
- */
 public class StringMethod01 {
     public static void main(String[] args) {
         //1. equals 前面已经讲过了. 比较内容是否相同，区分大小写
