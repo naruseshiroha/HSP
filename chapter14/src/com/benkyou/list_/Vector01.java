@@ -9,8 +9,6 @@ public class Vector01 {
         for (int i = 0; i < 10; i++) {
             vector.add(i);
         }
-        for (int i = 10; i < 15; i++) {
-            vector.add(i);
-        }
+        vector.add(100);
     }
 }
