@@ -8,42 +8,57 @@ import org.junit.Test;
 
 public class FileReader_ {
 
-    // 单个字符读取文件
     @Test
+    // 单个字符读取 read()
     public void readFile01() {
-        String filePath = "d:/a.txt";
+        String filePath = "d:\\HSP\\chapter19\\a.txt";
         FileReader fileReader = null;
         int data = 0;
-
+        // 1.创建 FileRead 对象
         try {
             fileReader = new FileReader(filePath);
+            // 循环读取
             while ((data = fileReader.read()) != -1) {
                 System.out.print((char) data);
             }
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
+        } finally {
+            if (fileReader != null) {
+                try {
+                    fileReader.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
         }
     }
 
-    // 字符数组读取文件
     @Test
+    // 字符数组读取文件 read(char[] cbuf)
     public void readFile02() {
-        String filePath = "d:/a.txt";
+        String filePath = "d:\\HSP\\chapter19\\a.txt";
         FileReader fileReader = null;
         int readLen = 0;
-        char[] buf = new char[8];
+        char[] cbuf = new char[8];
+
+        // 1.创建 FileRead 对象
         try {
             fileReader = new FileReader(filePath);
-            while ((readLen = fileReader.read(buf)) != -1) {
-                System.out.print(new String(buf, 0, readLen));
+            // 循环读取 使用 read(), 单个字符读取
+            while ((readLen = fileReader.read(cbuf)) != -1) {
+                System.out.print(new String(cbuf, 0, readLen));
             }
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
+        } finally {
+            if (fileReader != null) {
+                try {
+                    fileReader.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
         }
     }
-
 }
