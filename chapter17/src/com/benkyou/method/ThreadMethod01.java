@@ -1,4 +1,4 @@
-package com.benkyou.thread_;
+package com.benkyou.method;
 
 public class ThreadMethod01 {
     public static void main(String[] args) throws InterruptedException {

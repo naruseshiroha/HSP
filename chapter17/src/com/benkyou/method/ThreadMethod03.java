@@ -1,4 +1,4 @@
-package com.benkyou.thread_;
+package com.benkyou.method;
 
 public class ThreadMethod03 {
     public static void main(String[] args) throws InterruptedException {
@@ -16,9 +16,10 @@ public class ThreadMethod03 {
 }
 
 class DThread implements Runnable {
+    private boolean loop = true;
     @Override
     public void run() {
-        while (true) {
+        while (loop) {
             try {
                 Thread.sleep(50);
             } catch (InterruptedException e) {

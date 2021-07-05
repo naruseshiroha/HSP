@@ -1,4 +1,4 @@
-package com.benkyou.thread_;
+package com.benkyou.threaduse;
 
 public class Thread02 {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package com.benkyou.thread_;
+package com.benkyou.exit_;
 
 public class ThreadExit {
     public static void main(String[] args) throws InterruptedException {
