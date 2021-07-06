@@ -4,10 +4,10 @@ import java.io.*;
 
 public class BufferedCopy_ {
     public static void main(String[] args) {
-        // 1.BufferedReader 和 BufferedWriter 是安装字符操作
+        // 1.BufferedReader 和 BufferedWriter 是按照字符操作
         // 2.不要去操作 二进制文件[音频,视频,doc,pdf],可能造成文件损坏
-        String srcPath = "D:/c.txt";
-        String destPath = "D:/d.txt";
+        String srcPath = "D:\\HSP\\chapter19\\c.txt";
+        String destPath = "D:\\HSP\\chapter19\\c_copy.txt";
         BufferedReader br = null;
         BufferedWriter bw = null;
         String line;
