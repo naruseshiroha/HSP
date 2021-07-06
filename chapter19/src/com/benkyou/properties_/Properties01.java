@@ -15,5 +15,6 @@ public class Properties01 {
             map.put(arr[0], arr[1]);
         }
         System.out.println(map);
+        br.close();
     }
 }
