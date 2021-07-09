@@ -1,0 +1,4 @@
+-- USER()
+-- DATABASE()
+-- MD5(str)
+-- PASSWORD(str)
