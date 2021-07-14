@@ -3,7 +3,7 @@
 -- CURRENT_TIMESTAMP() 当前时间戳
 -- DATE (datetime) 返回datetime的日期部分
 -- DATE_ADD(date2, INTERVAL d_valued_type) 在date2中加上日期或时间
--- DATE_SUB(date2, INTERVAL d_valued_type) 在date2中加上日期或时间
+-- DATE_SUB(date2, INTERVAL d_valued_type) 在date2中减上日期或时间
 -- 1.d_valued_type 可以是 YEAR MONTH DAY HOUR MINUTE SECOND
 -- DATEDIFF(date1,date2) 两个日期差(结果天)
 -- 2.date1-date2 的天数,可以为负数
