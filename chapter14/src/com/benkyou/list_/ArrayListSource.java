@@ -9,6 +9,7 @@ public class ArrayListSource {
         // !!! IDEA 在默认情况下,Debug显示的数据是简化后的,如果希望看到完整的数据
         //     需要进行设置
         // transient Object[] elementData ,transient 修饰的属性不会被序列化
+        // 默认10,1.5倍扩容
 //        ArrayList list = new ArrayList();
         ArrayList list = new ArrayList(8);
         for (int i = 1; i <= 10; i++) {
