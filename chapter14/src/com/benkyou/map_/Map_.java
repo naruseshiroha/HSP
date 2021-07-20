@@ -3,6 +3,15 @@ package com.benkyou.map_;
 import java.util.HashMap;
 import java.util.Map;
 
+/*
+ * 1).Map 接口的常用实现类: HashMap Hashtable Properties
+ * 2).HashMap 是 Map 接口使用频率最高的实现类
+ * 3).HashMap 是以 K-V 键值对的方式来存储数据(HashMap$Node类型)
+ * 4).key 不能重复,但是值可以重复,允许使用 null Key 和 null Value
+ * 5).如果添加相同的 key,则会覆盖原来的 K-V,等同于修改.(key 不变,替换 value)
+ * 6).与 HashSet 一样,不保证映射的顺序,因为底层是以 hash 表的方式来存储的(jdk8 的 hashMap 底层,数组 + 链表 + 红黑树)
+ * 7).HashMap 没有实现同步,因此线程是不安全的,方法没有做同步互斥的操作. 没有 synchronized 修饰
+ */
 public class Map_ {
     public static void main(String[] args) {
         // 1.Map 与 Collection 并列存在.用于保存具有映射关系的数据: Key-Value(双列元素)

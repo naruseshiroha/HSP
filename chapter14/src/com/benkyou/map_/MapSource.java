@@ -35,8 +35,6 @@ public class MapSource {
         System.out.println(set.getClass());
         Collection<Object> values = map.values();
         System.out.println(values.getClass());
-
-
     }
 }
 
