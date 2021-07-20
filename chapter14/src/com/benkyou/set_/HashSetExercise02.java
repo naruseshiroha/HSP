@@ -1,9 +1,6 @@
 package com.benkyou.set_;
 
-import java.util.Arrays;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Objects;
+import java.util.*;
 
 public class HashSetExercise02 {
     public static void main(String[] args) {
