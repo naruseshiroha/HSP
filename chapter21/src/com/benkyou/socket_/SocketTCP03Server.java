@@ -1,12 +1,11 @@
 package com.benkyou.socket_;
 
-import java.io.InputStream;
-import java.io.OutputStream;
+import java.io.*;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.nio.charset.StandardCharsets;
 
-public class SocketTCP02Server {
+public class SocketTCP03Server {
     public static void main(String[] args) throws Exception {
         /*
          1.在本机 9999 端口监听,等待连接
@@ -24,19 +23,22 @@ public class SocketTCP02Server {
         // 3.通过 socket.getInputStream() 读取客户写入到数据通道的数据并显示
         InputStream is = socket.getInputStream();
         // 4.IO 读取
-        byte[] buf = new byte[1024];
-        int readLen = 0;
-        while ((readLen = is.read(buf)) != -1) {
-            // 根据读取到的实际长度,显示内容
-            System.out.println(new String(buf, 0, readLen));
-        }
+        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(is));
+        String s = bufferedReader.readLine();
+        System.out.println(s);
+
         // 5.获取 socket 相关联的输出流
         OutputStream os = socket.getOutputStream();
-        os.write("hello,client".getBytes(StandardCharsets.UTF_8));
-        // 设置结束标记
-        socket.shutdownOutput();
+        // 使用字符输出流的方式回复信息
+        BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(os));
+        bufferedWriter.write("hello,client 字符流");
+        // 插入一个换行符，表示回复内容的结束
+        bufferedWriter.newLine();
+        // 需要手动 flush
+        bufferedWriter.flush();
         // 6.关闭流和 socket
-        is.close();
+        bufferedWriter.close();
+        bufferedReader.close();
         socket.close();
         serverSocket.close();
         System.out.println("Server exited");
